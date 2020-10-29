@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#3ed2a7">
+	
+	<link rel="shortcut icon" href="./favicon.png" />
+	
+	<title>WEB APP NINJA | Fullstack development with Django and Reactjs</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/{YOUR_API_KEY}.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+	
+	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/themes/original.css" />
+	
+	<!-- Head Libs -->
+	<script async src="assets/vendors/modernizr.min.js"></script>
+	
+</head>
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
+	<div id="wrap">
+		
+		<header class="main-header nav-dark" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
+		
+			<div class="mainbar-wrap">
+				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+				<div class="container-fluid mainbar-container">
+					<div class="mainbar">
+						<div class="row mainbar-row align-items-lg-stretch px-4">
+							
+							<div class="col">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="index.html" rel="home">
+										<span class="navbar-brand-inner">
+											<img class="logo-dark" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja logo">
+											<img class="logo-sticky" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja logo">
+											<img class="mobile-logo-default" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja logo">
+											<img class="logo-default" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja logo">
+										</span>
+									</a>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
+										<span class="sr-only">Toggle navigation</span>
+										<span class="bars">
+											<span class="bar"></span>
+											<span class="bar"></span>
+											<span class="bar"></span>
+										</span>
+									</button>
+								</div><!-- /.navbar-header -->
+							</div><!-- /.col -->
+							
+							<div class="col">
+								
+								<div class="collapse navbar-collapse" id="main-header-collapse">
+									
+									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
+										
+										<li>
+											<a href="./index.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">
+														Home
+														<span class="submenu-expander">
+															<i class="fa fa-angle-down"></i>
+														</span>
+													</span>
+												</span>
+											</a>
+                                        </li>
+                                        <li>
+											<a href="./about.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">
+														About
+														<span class="submenu-expander">
+															<i class="fa fa-angle-down"></i>
+														</span>
+													</span>
+												</span>
+											</a>
+                                        </li>
+                                        <li>
+											<a href="./portfolio/featured.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">
+														Portfolio
+														<span class="submenu-expander">
+															<i class="fa fa-angle-down"></i>
+														</span>
+													</span>
+												</span>
+											</a>
+                                        </li>
+                                        <li>
+                                            <a href="./contact.html">
+                                                <span class="link-icon"></span>
+                                                <span class="link-txt">
+                                                    <span class="link-ext"></span>
+                                                    <span class="txt">
+                                                        Contact
+                                                        <span class="submenu-expander">
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+										
+									
+									</ul><!-- /#primary-nav  -->
+								
+								</div><!-- /#main-header-collapse -->
+								
+							</div><!-- /.col -->
+						
+						
+						</div><!-- /.mainbar-row -->
+					</div><!-- /.mainbar -->
+				</div><!-- /.mainbar-container -->
+			</div><!-- /.mainbar-wrap -->
+			
+		</header><!-- /.main-header -->
+		
+		<div class="titlebar titlebar-sm scheme-dark bg-gray-2 bb-fade-black-005">
+
+			<div class="titlebar-inner py-5">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+
+						<div class="titlebar-col col-md-6">
+							<h1 class="font-size-26 mb-1">About me</h1>
+							<p class="font-size-14 text-fade-dark-06">I enjoy building cool stuff.</p>
+						</div><!-- /.titlebar-col -->
+
+
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
+			
+		</div><!-- /.titlebar -->
+	
+		<main id="content" class="content">
+			
+			<section class="vc_row pt-65 pb-40">
+				<div class="container">
+					<div class="row d-flex flex-wrap align-items-center">
+
+						<div class="lqd-column col-md-6 col-xs-12 mb-5 mb-md-0">
+
+							<div class="carousel-item col-xs-12 px-0 mb-4">
+                                <figure>
+                                    <img src="./assets/img/profile/dp.png" alt="Carousel Item">
+                                </figure>
+                            </div><!-- /.carousel-item -->
+
+						</div><!-- /.lqd-column col-md-6 -->
+						
+						<div class="lqd-column col-md-6 pl-md-6">
+							
+							<h2 class="h3 mt-0">Who am I?</h2>
+                            <p>I'm a full stack engineer who enjoys working on complex business problems and simplifies it using tech. I've worked as a full time engineer at leading start ups and fortune 500 companies and have a good deal of experience in building scalable web applications</p>
+                            <p>The things I value are</p>
+
+							<div class="iconbox iconbox-inline iconbox-sm mb-15">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<i class="icon-ion-ios-checkmark"></i>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<h3 class="font-weight-normal font-size-15 text-fade-dark-07">Providing a rich and seamless experience to my clients </h3>
+							</div><!-- /.iconbox -->
+
+							<div class="iconbox iconbox-inline iconbox-sm mb-15">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<i class="icon-ion-ios-checkmark"></i>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<h3 class="font-weight-normal font-size-15 text-fade-dark-07">Giving before receiving</h3>
+							</div><!-- /.iconbox -->
+
+							<div class="iconbox iconbox-inline iconbox-sm mb-15">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<i class="icon-ion-ios-checkmark"></i>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<h3 class="font-weight-normal font-size-15 text-fade-dark-07">Increasing a business's value by taking it digital</h3>
+							</div><!-- /.iconbox -->
+
+						</div><!-- /.col-md-6 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section class="vc_row pt-30 pb-90">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-4">
+
+							<div class="iconbox text-left iconbox-shadow-hover iconbox-xl iconbox-heading-sm iconbox-filled border-athens-gray border-radius-3 pt-35 pb-35">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<img src="./assets/img/icon/linkedin.png" height="20" width="20">
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3 class="font-weight-normal">Linkedin</h3>
+									<p><a href="https://linkedin.com/in/aakash94">View my Profile</a></p>
+								</div><!-- /.contents -->
+							</div><!-- /.iconbbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+						<div class="lqd-column col-md-4">
+
+							<div class="iconbox text-left iconbox-shadow-hover iconbox-xl iconbox-heading-sm iconbox-filled border-athens-gray border-radius-3 pt-35 pb-35">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<img src="./assets/img/icon/fiverr.png" height="20" width="20">
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3 class="font-weight-normal">Fiverr</h3>
+									<p><a href="https://fiverr.com/aakashjsr">View my Profile</a></p>
+								</div><!-- /.contents -->
+							</div><!-- /.iconbbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+						<div class="lqd-column col-md-4">
+
+							<div class="iconbox text-left iconbox-shadow-hover iconbox-xl iconbox-heading-sm iconbox-filled border-athens-gray border-radius-3 pt-35 pb-35">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container">
+										<img src="./assets/img/icon/codementor.png" height="20" width="20">
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3 class="font-weight-normal">Codementor</h3>
+									<p><a href="https://www.codementor.io/@aakashkumardas">View my Profile</a></p>
+								</div><!-- /.contents -->
+							</div><!-- /.iconbbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section class="vc_row pt-130 pb-110 bg-cover bg-cover" style="background-image: url(./assets/img/about_banner.jpg);" data-parallax="true" data-parallax-options='{ "parallaxBG": true }'>
+				<div class="container">
+					<div class="row">
+						
+						<div class="lqd-column col-md-3 col-xs-6 text-center">
+							
+							<div class="liquid-counter liquid-counter-default text-white text-center">
+								<div class="liquid-counter-element mb-2" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "minFontSize": 70, "maxFontSize": 70 }' data-enable-counter="true" data-counter-options='{"targetNumber":"88","blurEffect":true}'>
+									<span>88</span>
+								</div><!-- /.liquid-counter-element -->
+								<span class="liquid-counter-text liquid-text-bottom">PROJECTS</span>
+							</div><!-- /.liquid-counter -->
+							
+						</div><!-- /.col-md-3 col-sm-6 -->
+						
+						<div class="lqd-column col-md-3 col-xs-6 text-center">
+							
+							<div class="liquid-counter liquid-counter-default text-white text-center">
+								<div class="liquid-counter-element mb-2" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "minFontSize": 70, "maxFontSize": 70 }' data-enable-counter="true" data-counter-options='{"targetNumber":"151","blurEffect":true}'>
+									<span>151</span>
+								</div><!-- /.liquid-counter-element -->
+								<span class="liquid-counter-text liquid-text-bottom">CONSULTATIONS</span>
+							</div><!-- /.liquid-counter -->
+							
+						</div><!-- /.col-md-3 col-sm-6 -->
+						
+						<div class="lqd-column col-md-3 col-xs-6 text-center">
+							
+							<div class="liquid-counter liquid-counter-default text-white text-center">
+								<div class="liquid-counter-element mb-2" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "minFontSize": 70, "maxFontSize": 70 }' data-enable-counter="true" data-counter-options='{"targetNumber":"147","blurEffect":true}'>
+									<span>147</span>
+								</div><!-- /.liquid-counter-element -->
+								<span class="liquid-counter-text liquid-text-bottom">5 STAR POSITIVE REVIEWS</span>
+							</div><!-- /.liquid-counter -->
+							
+						</div><!-- /.col-md-3 col-sm-6 -->
+						
+						<div class="lqd-column col-md-3 col-xs-6 text-center">
+							
+							<div class="liquid-counter liquid-counter-default text-white text-center">
+								<div class="liquid-counter-element mb-2" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "minFontSize": 70, "maxFontSize": 70 }' data-enable-counter="true" data-counter-options='{"targetNumber":"100%","blurEffect":true}'>
+									<span>100%</span>
+								</div><!-- /.liquid-counter-element -->
+								<span class="liquid-counter-text liquid-text-bottom">HAPPY CLIENTS</span>
+							</div><!-- /.liquid-counter -->
+							
+						</div><!-- /.col-md-3 col-sm-6 -->
+						
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section class="vc_row pt-55 pb-55">
+				<div class="container">
+					<div class="row d-flex flex-wrap align-items-center">
+
+						<div class="lqd-column col-md-12 text-center mb-5">
+							
+							<h2 class="h3">Experience in Development</h2>
+
+						</div><!-- /.lqd-column col-md-12 -->
+
+						<div class="lqd-column col-md-4 col-xs-12">
+
+							<h2 class="h4 mt-0">Tech stack</h2>
+							<p>I build end to end web applications and primarily work with python and javascript</p>
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+						<div class="lqd-column col-md-7 col-md-offset-1 col-xs-12">
+
+							<div class="liquid-progressbar liquid-progressbar-xl liquid-progressbar-circle liquid-progressbar-values-inside mb-2	" data-progressbar="true" data-progressbar-options='{"value":100,"suffix":"%"}'>
+								<div class="liquid-progressbar-inner">
+									<span class="liquid-progressbar-bar">
+										<span class="liquid-progressbar-percentage"></span>
+									</span>
+								</div><!-- /.liquid-progressbar-inner -->
+								<div class="liquid-progressbar-details">
+									<h3 class="liquid-progressbar-title">Python / Django</h3>
+								</div><!-- /.liquid-progressbar-details -->
+							</div><!-- /.liquid-progressbar -->
+
+							<div class="liquid-progressbar liquid-progressbar-xl liquid-progressbar-circle liquid-progressbar-values-inside mb-2	" data-progressbar="true" data-progressbar-options='{"value":100,"suffix":"%"}'>
+								<div class="liquid-progressbar-inner">
+									<span class="liquid-progressbar-bar">
+										<span class="liquid-progressbar-percentage"></span>
+									</span>
+								</div><!-- /.liquid-progressbar-inner -->
+								<div class="liquid-progressbar-details">
+									<h3 class="liquid-progressbar-title">Javascript / React</h3>
+								</div><!-- /.liquid-progressbar-details -->
+							</div><!-- /.liquid-progressbar -->
+
+							<div class="liquid-progressbar liquid-progressbar-xl liquid-progressbar-circle liquid-progressbar-values-inside mb-2	" data-progressbar="true" data-progressbar-options='{"value":100,"suffix":"%"}'>
+								<div class="liquid-progressbar-inner">
+									<span class="liquid-progressbar-bar">
+										<span class="liquid-progressbar-percentage"></span>
+									</span>
+								</div><!-- /.liquid-progressbar-inner -->
+								<div class="liquid-progressbar-details">
+									<h3 class="liquid-progressbar-title">Postgresql / Mysql</h3>
+								</div><!-- /.liquid-progressbar-details -->
+							</div><!-- /.liquid-progressbar -->
+
+							<div class="liquid-progressbar liquid-progressbar-xl liquid-progressbar-circle liquid-progressbar-values-inside mb-2	" data-progressbar="true" data-progressbar-options='{"value":100,"suffix":"%"}'>
+								<div class="liquid-progressbar-inner">
+									<span class="liquid-progressbar-bar">
+										<span class="liquid-progressbar-percentage"></span>
+									</span>
+								</div><!-- /.liquid-progressbar-inner -->
+								<div class="liquid-progressbar-details">
+									<h3 class="liquid-progressbar-title">AWS / Docker / Devops</h3>
+								</div><!-- /.liquid-progressbar-details -->
+							</div><!-- /.liquid-progressbar -->
+
+						</div><!-- /.col-md-7 col-md-offset-1 -->
+						
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section class="vc_row pt-55 pb-55" id="testimonials">
+				<div class="container-fluid px-0">
+                    <div class="lqd-column col-md-12 text-center mb-5">
+							
+                        <h2 class="h3">What my clients say</h2>
+
+                    </div><!-- /.lqd-column col-md-12 -->
+					<div class="lqd-column col-md-9 col-md-offset-3">
+
+                        <div class="carousel-container">
+
+                            <div class="carousel-items row" data-lqd-flickity='{ "prevNextButtons": false, "fullwidthSide": true, "groupCells": false }'>
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>We worked with Aakash for 1 year building the core of our application at The Good Trends. Aakash was extremely knowledgeable, a pleasure to work with and he delivered most of the code that got us started. Would highlight recommend him for any project.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Victor Mithouard</h5>
+                                                <h6>CEO ,The Good Trends Inc</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>Aakash is very professional and knowledgeable in web development. He is really a hardworking programmer. I've been working with him for almost a half year. I really appreciated the time Aakash spent communicate with me about my questions and working with me to figure out the solution. I'm really impressed by his expertise to simplify complex problems as well as his friendly attitude. I learned a lot from him and would highly recommend him for mentoring and solving coding problems.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Fangzheng JI</h5>
+                                                <h6>Research Scholar</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>Aakash was tasked with the start-to-finish development work on a software project and demonstrated exceptional technical capabilities, professionalism, and the ability to deliver exactly what he promised. I highly recommend his technical services.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Mike</h5>
+                                                <h6>Founder, Sourcebox</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>I worked closely with Aakash when he helped our team set up AWS infrastructure and develop Inibii's Auth server as well as Data Lake back-end. He has a strong understanding of business process in addition to his strong technical background. He was a team player and loves to wear multiple hats to get the job done. He was very innovative as well as dedicated to his project and team. I'll like to work with him again.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Moshiul Arefin</h5>
+                                                <h6>Founder, Inibii</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>I had a great experience. Aakash is very hard working, and went above and beyond to make sure the project was excellent.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>David Iyoka</h5>
+                                                <h6>Client</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>I’ve seen Aakash go above and beyond in researching and developing the product during the time we worked together. He’s a quick learner who’s happy to dive into new roles and challenges for the organization. He worked as a full stack engineer and a data engineer and was great with both. I would be happy to recommend him as he would be an asset to any organization.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Ashok Varma</h5>
+                                                <h6>SaaS Entrepreneur, CEO - ReportGarden Inc</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>Aakash is fantastic to work with. He solved an issue I had been working on for 3 days in few minutes and explained everything to me in clear simple steps. I would highly recommend him for solving coding problems and mentoring.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Ben Bright</h5>
+                                                <h6>Client</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>Finally found someone here who is knowledgeable, reliable, and who has the ability to follow though and complete bigger projects. Thanks, Looking forward to additional projects in the near future.</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Frank</h5>
+                                                <h6>Client</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+
+                                <div class="carousel-item col-sm-6 col-xs-12">
+                        
+                                    <div class="testimonial testimonial-sm testimonial-whole-filled testimonial-fill-onhover testimonial-whole-shadowed testimonial-whole-shadowed-alt testimonial-info-inline round">
+
+                                        <div class="testimonial-quote-mark mb-3 mt-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="42" viewBox="0 0 58 42">
+                                                <path d="M72.7773438,74.171875 C76.4231953,76.5807412 78.2460938,80.0637793 78.2460938,84.6210938 C78.2460938,88.3320498 77.0742305,91.391915 74.7304688,93.8007812 C72.386707,96.2096475 69.4244971,97.4140625 65.84375,97.4140625 C62.5234209,97.4140625 59.6588662,96.2421992 57.25,93.8984375 C54.8411338,91.5546758 53.6367188,88.4622588 53.6367188,84.6210938 C53.6367188,81.1705557 54.8411338,77.6875176 57.25,74.171875 L68.578125,56.7890625 L80.3945312,56.7890625 L72.7773438,74.171875 Z M102.5625,74.171875 C106.208352,76.5807412 108.03125,80.0637793 108.03125,84.6210938 C108.03125,88.3320498 106.859387,91.391915 104.515625,93.8007812 C102.171863,96.2096475 99.2096533,97.4140625 95.6289062,97.4140625 C92.3085771,97.4140625 89.4440225,96.2421992 87.0351562,93.8984375 C84.62629,91.5546758 83.421875,88.4622588 83.421875,84.6210938 C83.421875,81.1705557 84.62629,77.6875176 87.0351562,74.171875 L98.3632812,56.7890625 L110.179688,56.7890625 L102.5625,74.171875 Z" transform="translate(-53 -56)"></path>
+                                            </svg>
+                                        </div><!-- /.testimonial-quote-mark -->
+                                        
+                                        <div class="testimonial-quote mt-2">
+                                            <blockquote>
+                                                <p>The service offered to me was terrific. Aakash is a warm, flexible and approachable person, who is dedicated to his task. He was very patient with me and adjusting everytime I wanted even the smallest of changes. I'd recommend him for all related projects and would definitely come back to him anytime I'm doing a similar task. Thanks a lot, Aakash!</p>
+                                            </blockquote>
+                                        </div><!-- /.testimonial-qoute -->
+                                        
+                                        <div class="testimonial-details mt-4 mb-3">
+                                            <div class="testimonial-info">
+                                                <h5>Advait</h5>
+                                                <h6>Client</h6>
+                                            </div><!-- /.testimonial-info -->
+                                        </div><!-- /.testimonial-details -->
+                                        
+                                    </div><!-- /.testimonial -->
+                        
+                                </div><!-- /.carousel-item -->
+                        
+                            </div><!-- /.carousel-items row -->
+                        
+                        </div><!-- /.carousel-container -->
+
+                </div>
+				</div><!-- /.container -->
+			</section>
+
+			<section class="vc_row pt-80 pb-100">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-8 col-md-offset-2 text-center">
+
+							<h2 class="mt-0 mb-4">Launch your amazing App today.</h2>
+							<p class="font-size-18 px-md-7 mx-md-3 mb-5">No more complex codes or boring designs. Creating an attractive and functional site has never been easier.</p>
+
+							<a href="./contact.html" target="_blank" class="btn btn-solid round btn-bordered border-thin mb-2">
+								<span>
+									<span class="btn-txt">Contact me</span>
+								</span>
+							</a>
+							<br>
+
+						</div><!-- /.col-md-8 col-md-offset-2 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+
+			</section>
+			
+		</main><!-- /#content.content -->
+		
+		
+	</div><!-- /#wrap -->
+
+	<script src="./assets/vendors/jquery.min.js"></script>
+	<script src="./assets/js/theme-vendors.js"></script>
+	<script src="./assets/js/theme.min.js"></script>
+	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+
+</body>
+</html>

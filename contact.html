@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#3ed2a7">
+	
+	<link rel="shortcut icon" href="./favicon.png" />
+	
+	<title>WEB APP NINJA | Fullstack development with Django and Reactjs</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/{YOUR_API_KEY}.css">
+	
+	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/themes/original.css" />
+
+	<style>
+		.loader-backdrop {
+			position: fixed;
+			top: 0;
+			z-index: 100;
+			background: black;
+			height: 100%;
+			width: 100%;
+			opacity: 0.5;
+			display: none;
+		}
+		.loader {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			z-index: 110;
+			display: none;
+		}
+	</style>
+	
+	<!-- Head Libs -->
+	<script async src="assets/vendors/modernizr.min.js"></script>
+	<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	
+</head>
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
+	<div id="wrap">
+
+		<div class="titlebar titlebar-sm scheme-light text-center" data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url(./assets/img/about_banner.jpg);">
+
+			<div class="titlebar-overlay ld-overlay" ></div>
+		
+			<header class="main-header main-header-overlay nav-light">
+
+				<div class="mainbar-wrap px-4">
+	
+					<span class="megamenu-hover-bg"></span>
+	
+					<div class="container mainbar-container">
+	
+						<div class="mainbar">
+	
+							<div class="row mainbar-row">
+	
+								<div class="col-auto">
+	
+									<div class="navbar-header">
+	
+										<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile mobile-nav-trigger-cloned" data-toggle="collapse" data-target="#main-header-collapse-clone" aria-expanded="false">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="bars">
+												<span class="bar"></span>
+												<span class="bar"></span>
+												<span class="bar"></span>
+											</span>
+										</button>
+										<a class="navbar-brand" href="./index.html">
+											<span class="navbar-brand-inner">
+												<img class="mobile-logo-default" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja">
+												<img class="logo-default" src="./assets/img/logo/web-apps-ninja-logo.png" alt="Web App Ninja">
+											</span><!-- /.navbar-brand-inner -->
+										</a>
+	
+									</div><!-- /.navbar-header -->
+	
+								</div><!-- /.col -->
+	
+								<div class="col text-lg-right">
+	
+									<div class="collapse navbar-collapse navbar-visible-ontoggle justify-content-end" id="main-header-collapse" aria-expanded="false" role="tablist">
+	
+										<ul class="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-end">
+											<li>
+												<a href="./index.html">
+													<span class="link-icon"></span>
+													<span class="link-txt">
+														<span class="link-ext"></span>
+														<span class="txt">
+															Home
+															<span class="submenu-expander">
+																<i class="fa fa-angle-down"></i>
+															</span>
+														</span>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="./about.html">
+													<span class="link-icon"></span>
+													<span class="link-txt">
+														<span class="link-ext"></span>
+														<span class="txt">
+															About
+															<span class="submenu-expander">
+																<i class="fa fa-angle-down"></i>
+															</span>
+														</span>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="./portfolio/featured.html">
+													<span class="link-icon"></span>
+													<span class="link-txt">
+														<span class="link-ext"></span>
+														<span class="txt">
+															Portfolio
+															<span class="submenu-expander">
+																<i class="fa fa-angle-down"></i>
+															</span>
+														</span>
+													</span>
+												</a>
+											</li>
+	
+										</ul>
+	
+									</div><!-- /.navbar-collapse -->
+	
+									<div class="header-module">
+	
+										<button class="nav-trigger main-nav-trigger main-nav-trigger style-1 collapsed scheme-light" role="button" type="button" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" aria-controls="main-header-collapse">
+											<span class="bars">
+												<span class="bar"></span>
+												<span class="bar"></span>
+												<span class="bar"></span>
+											</span>
+										</button>
+	
+									</div><!-- /.header-module -->
+	
+								</div><!-- /.col -->
+	
+							</div><!-- /.row mainbar-row -->
+	
+						</div><!-- /.mainbar -->
+	
+					</div><!-- /.container -->
+	
+				</div><!-- /.mainbar-wrap -->
+			</header>
+
+			<div class="titlebar-inner pt-50 pb-210">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>Contact Me</h1>
+							
+						</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
+			
+		</div><!-- /.titlebar -->
+	
+		<main id="content" class="content bg-gray">
+			
+			<div>
+				<div id="loader-backdrop" class="loader-backdrop"></div>
+				<img id="loader" src="./assets/img/spinners/spinner-4-light.svg" class="loader">
+			</div>
+			
+			
+			<section class="vc_row">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-12 px-4 pt-45 pb-30 bg-white box-shadow-1 pull-up">
+
+							<div class="row d-flex flex-wrap align-items-center">
+
+								<div class="lqd-column col-md-6 col-md-offset-1">
+
+									<header class="fancy-title">
+										<h2>Drop me a line</h2>
+										<p>I'm here to answer any question you may have</p>
+									</header><!-- /.fancy-title -->
+
+								</div><!-- /.lqd-column col-md-6 col-md-offset-1 -->
+
+								<div class="lqd-column col-md-4 hidden-sm hidden-xs text-right">
+
+									<div class="iconbox text-right iconbox-xl" data-animate-icon="true" data-plugin-options='{"resetOnHover":true,"color":"rgb(216, 219, 226)","hoverColor":"rgb(0, 0, 0)"}'>
+										<div class="iconbox-icon-wrap">
+											<span class="iconbox-icon-container">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"> <polygon stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="1,30 63,1 23,41" /> <polygon stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="34,63 63,1 23,41" /> </svg>
+											</span>
+										</div><!-- /.iconbox-icon-wrap -->
+									</div><!-- /.iconbox -->
+								</div><!-- /.lqd-column col-md-4 hidden-sm hidden-xs -->
+
+							</div><!-- /.row -->
+							
+
+							<div class="row">
+
+								<div class="lqd-column col-md-10 col-md-offset-1">
+
+									<div class="contact-form contact-form-inputs-underlined contact-form-button-circle">
+										<form id="contactForm">
+											<div class="row d-flex flex-wrap">
+												<div class="lqd-column col-md-6 mb-20">
+													<input class="lh-25 mb-30" type="text" id="name" aria-required="true" aria-invalid="false" placeholder="First Name" required>
+													<input class="lh-25 mb-30" type="email" id="email" aria-required="true" aria-invalid="false" placeholder="Your email address" required>
+													<input class="lh-25 mb-30" type="tel" id="phone" aria-required="true" aria-invalid="false" placeholder="Mobile no">
+												</div><!-- /.col-md-6 -->
+												<div class="lqd-column col-md-6 mb-20">
+													<textarea cols="10" rows="6" id="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+												</div><!-- /.col-md-12 -->
+												<div class="lqd-column col-md-6">
+													<p class="font-size-16 opacity-07"><em>I know how important your information is. They are always safe with me.</em></p>
+												</div><!-- /.col-md-6 -->
+												<div class="lqd-column col-md-6 text-md-right">
+													<input type="submit" id="sendButton" value="Send message" class="font-size-13 ltr-sp-1 font-weight-bold">
+												</div><!-- /.col-md-6 -->
+
+											</div><!-- /.row -->
+										</form>
+										<div class="contact-form-result hidden"></div><!-- /.contact-form-result -->
+									</div><!-- /.contact-form -->
+									<h2>Or</h2>
+									<h4>Send me an email at <a href="mailto:aakashjsr@gmail.com">aakashjsr@gmail.com</a></h4>
+
+								</div><!-- /.col-md-10 col-md-offset-1 -->
+
+							</div><!-- /.row -->
+
+						</div><!-- /.lqd-column col-md-12 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+		</main><!-- /#content.content -->
+		
+		
+		
+	</div><!-- /#wrap -->
+
+	<script src="./assets/vendors/jquery.min.js"></script>
+	<script src="./assets/js/theme-vendors.js"></script>
+	<script src="./assets/js/theme.min.js"></script>
+	<script src="./assets/js/liquidAjaxContactForm.min.js"></script>
+	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+	<script>
+		(function() {
+		emailjs.init("user_n2IDpIBwG1gSgJU5kQPly");
+		})();
+
+		function hideLoader() {
+			document.getElementById("loader").style.display="none";
+			document.getElementById("loader-backdrop").style.display="none";
+		}
+
+		function showLoader() {
+			document.getElementById("loader").style.display="inherit";
+			document.getElementById("loader-backdrop").style.display="inherit";
+		}
+
+		var contactForm = document.getElementById("contactForm");
+		contactForm.addEventListener("submit", function (event) {
+			event.preventDefault();
+			var data = {
+				name: document.getElementById("name").value,
+				email: document.getElementById("email").value,
+				phone: document.getElementById("phone").value,
+				message: document.getElementById("message").value,
+			}
+			showLoader();
+
+			emailjs.send("service_k7w4807","template_ogvtvk9", data).then(function () {
+				hideLoader();
+				contactForm.reset();
+				alert("Thanks for reaching out. You'll hear from me soon!")
+			}, function () {
+				hideLoader();
+				alert("Oops! Unable to send your message. Please drop me a mail at aakashjsr@gmail.com")
+			});
+		});
+	</script>
+
+</body>
+</html>
