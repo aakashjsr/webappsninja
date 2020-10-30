@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Cerebri Sans';
-  src: url("../../fonts/cerebri-sans.woff2") format("woff2"), url("../../fonts/cerebri-sans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 :root {
   --color-primary: #4762ff;
